@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  transition: all ease-in-out 0.15s;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section div.intro {
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 5rem;
+}
+section div.intro .image-wrapper {
+  background-color: black;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: -1px -1px 75px 0px rgb(255, 0, 0);
+  -webkit-box-shadow: -1px -1px 75px 0px rgb(255, 0, 0);
+  -moz-box-shadow: -1px -1px 75px 0px rgb(255, 0, 0);
+}
+section button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 200;
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+section button.outline {
+  border: 1px solid white;
+  border-radius: 10rem;
+}
+section button.outline.more {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section button.outline:hover {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

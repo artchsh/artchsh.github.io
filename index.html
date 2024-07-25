@@ -1,111 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Artyom Chshyogolev - Developer Portfolio | artchsh</title>
-		<meta name="description" content="Portfolio of Artyom Chshyogolev, a developer from Kazakhstan specializing in JavaScript, TypeScript, Python, and PHP. View my projects and skills.">
-		<meta name="keywords" content="Artyom Chshyogolev, developer, Kazakhstan, JavaScript, TypeScript, Python, PHP, web development, machine learning">
-		<meta name="author" content="Artyom Chshyogolev">
-		
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://artchsh.github.io/">
-		<meta property="og:title" content="Artyom Chshyogolev - Developer Portfolio">
-		<meta property="og:description" content="Portfolio of Artyom Chshyogolev, a developer from Kazakhstan specializing in JavaScript, TypeScript, Python, and PHP.">
-		<meta property="og:image" content="https://artchsh.github.io/artchsh1600900.png">
-	
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content="https://artchsh.github.io/">
-		<meta property="twitter:title" content="Artyom Chshyogolev - Developer Portfolio">
-		<meta property="twitter:description" content="Portfolio of Artyom Chshyogolev, a developer from Kazakhstan specializing in JavaScript, TypeScript, Python, and PHP.">
-		<meta property="twitter:image" content="https://artchsh.github.io/artchsh1600900.png">
-	
-		<link rel="canonical" href="https://artchsh.github.io/">
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script src="https://kit.fontawesome.com/9e19b403ed.js" crossorigin="anonymous"></script>
-	</head>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Artyom Chshyogolev - Developer Portfolio | artchsh</title>
+	<meta name="description"
+		content="Portfolio of Artyom Chshyogolev, a developer from Kazakhstan specializing in JavaScript, TypeScript, Python, and PHP. View my projects and skills.">
+	<meta name="keywords"
+		content="Artyom Chshyogolev, developer, Kazakhstan, JavaScript, TypeScript, Python, PHP, web development, machine learning">
+	<meta name="author" content="Artyom Chshyogolev">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://artchsh.github.io/">
+	<meta property="og:title" content="Artyom Chshyogolev - Developer Portfolio">
+	<meta property="og:description"
+		content="Portfolio of Artyom Chshyogolev, a developer from Kazakhstan specializing in JavaScript, TypeScript, Python, and PHP.">
+	<meta property="og:image" content="https://artchsh.github.io/artchsh1600900.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://artchsh.github.io/">
+	<meta property="twitter:title" content="Artyom Chshyogolev - Developer Portfolio">
+	<meta property="twitter:description"
+		content="Portfolio of Artyom Chshyogolev, a developer from Kazakhstan specializing in JavaScript, TypeScript, Python, and PHP.">
+	<meta property="twitter:image" content="https://artchsh.github.io/artchsh1600900.png">
+
+	<link rel="canonical" href="https://artchsh.github.io/">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://kit.fontawesome.com/9e19b403ed.js" crossorigin="anonymous"></script>
+</head>
 
 <body class="bg-black text-white p-4 flex flex-col gap-2">
-    <header>
-        <h1 class="font-bold text-2xl">artchsh</h1>
-    </header>
-    <main class="flex flex-col gap-2">
-        <section aria-label="Status Badges" class="flex flex-wrap gap-2">
-            <img src="https://api.statusbadges.me/badge/playing/530715643608170514" alt="Current playing status">
-            <img src="https://api.statusbadges.me/badge/status/530715643608170514" alt="Current online status">
-            <img src="https://api.statusbadges.me/badge/vscode/530715643608170514" alt="Current VS Code status">
-        </section>
-        <section aria-label="Bio" class="bg-zinc-800 rounded p-3 max-w-2xl w-full">
-            <p>👋 Hi, I'm Artyom Chshyogolev! I am a developer from Kazakhstan.</p>
-            <p>I am interested in web development, machine learning, and creating useful software.</p>
-            <p>My main stack is JavaScript/TypeScript, but I also have experience with Python and PHP.</p>
-            <p>Simple webpage, showing projects that i have been working on, with links to them.</p>
-        </section>
-        <section aria-label="Social Links" class="flex flex-wrap gap-2">
-            <a href="https://github.com/artchsh" target="_blank" rel="noopener noreferrer" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center transition duration-300 gap-1.5">
-                <i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/artchsh" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center transition duration-300 gap-1.5">
-                <i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
-            </a>
-        </section>
-        <section aria-label="Projects" class="bg-zinc-800 rounded p-3 max-w-2xl w-full">
-            <h2 class="font-bold text-xl mb-2">My Projects</h2>
-            <div class="text-sm text-gray-400 mb-2" id="status-legend"></div>
-            <ul id="projects-list" class="space-y-1"></ul>
-        </section>
-    </main>
+	<header>
+		<h1 class="font-bold text-2xl">artchsh</h1>
+	</header>
+	<main class="flex flex-col gap-2">
+		<section aria-label="Status Badges" class="flex flex-wrap gap-2">
+			<img src="https://api.statusbadges.me/badge/playing/530715643608170514" alt="Current playing status">
+			<img src="https://api.statusbadges.me/badge/status/530715643608170514" alt="Current online status">
+			<img src="https://api.statusbadges.me/badge/vscode/530715643608170514" alt="Current VS Code status">
+		</section>
+		<section aria-label="Bio" class="bg-zinc-800 rounded p-3 max-w-2xl w-full">
+			<p>👋 Hi, I'm Artyom Chshyogolev! I am a developer from Kazakhstan.</p>
+			<p>I am interested in web development, machine learning, and creating useful software.</p>
+			<p>My main stack is JavaScript/TypeScript, but I also have experience with Python and PHP.</p>
+			<p>Simple webpage, showing projects that i have been working on, with links to them.</p>
+		</section>
+		<section aria-label="Social Links" class="flex flex-wrap gap-2">
+			<a href="https://github.com/artchsh" target="_blank" rel="noopener noreferrer"
+				class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center transition duration-300 gap-1.5">
+				<i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span>
+			</a>
+			<a href="https://www.linkedin.com/in/artchsh" target="_blank" rel="noopener noreferrer"
+				class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center transition duration-300 gap-1.5">
+				<i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+			</a>
+		</section>
+		<section aria-label="Projects" class="bg-zinc-800 rounded p-3 max-w-2xl w-full">
+			<h2 class="font-bold text-xl mb-2">My Projects</h2>
+			<div class="text-sm text-gray-400 mb-2" id="status-legend"></div>
+			<ul id="projects-list" class="space-y-1"></ul>
+		</section>
+	</main>
 
-    <script>
-        // Status legend
-        const statusLegend = [
-            {emoji: "✅", description: "Source code of project is available, and it works/worked"},
-            {emoji: "⚠️", description: "Maybe broken"},
-            {emoji: "⏳", description: "Currently working on it"},
-            {emoji: "❌", description: "I decided to not do this project / Broken"},
-            {emoji: "🗓", description: "Planned project"}
-        ];
+	<script>
+		// Status legend
+		const statusLegend = [
+			{ emoji: "✅", description: "Source code of project is available, and it works/worked" },
+			{ emoji: "⚠️", description: "Maybe broken" },
+			{ emoji: "⏳", description: "Currently working on it" },
+			{ emoji: "❌", description: "I decided to not do this project / Broken" },
+			{ emoji: "🗓", description: "Planned project" }
+		];
 
-        // Projects data
-        const projects = [
-            {name: "Discord bot (JavaScript)", status: "⚠️", url: "https://github.com/artchsh/GendoIkari-DiscordJS"},
-            {name: "Telegram bot: System of anonymous peer-to-peer psychological assistance (Python)", status: "✅", url: "https://github.com/artchsh/sapppa"},
-            {name: "Instagram bot: Declare love (Python)", status: "⚠️", url: "https://github.com/artchsh/instagram-bot"},
-            {name: "Website: PETE - adopt a pet from a shelter (JavaScript -> React)", status: "✅", url: "https://github.com/pete-kz/pete-kz"},
-            {name: "RESTful API for PETE website (JavaScript -> ExpressJS)", status: "✅", url: "https://github.com/pete-kz/pete-kz-api"},
-            {name: "Website: Private file storage for tutor (PHP 8)", status: "✅", url: "https://github.com/artchsh/website-edu-tutorial"},
-            {name: "JSON Database (JavaScript/TypeScript)", status: "⚠️", url: "https://github.com/artchsh/json-database"},
-            {name: "AI-News: News Scraper (Python)", status: "❌", url: ""},
-            {name: "Parser for NMAP Scan Output (Python)", status: "⏳", url: ""},
-            {name: "React i18n json translator (Python)", status: "⏳", url: ""},
-            {name: "CNN: Slay or Not slay? (Python)", status: "🗓", url: ""},
-			{name: "Minecraft Server Manager", status: "✅", url: "https://github.com/artchsh/minecraft-server-manager"}
-        ];
+		// Projects data
+		const projects = [
+			{ name: "Minecraft Server Manager (Python)", status: "✅", url: "https://github.com/artchsh/minecraft-server-manager" },
+			{ name: "Discord Bot (Python)", status: "✅", url: "https://github.com/artchsh/minecraft-server-manager" },
+			{ name: "Telegram bot: System of anonymous peer-to-peer psychological assistance (Python)", status: "✅", url: "https://github.com/artchsh/sapppa" },
+			{ name: "Website: PETE - adopt a pet from a shelter (JavaScript -> React)", status: "✅", url: "https://github.com/pete-kz/pete-kz" },
+			{ name: "RESTful API for PETE website (JavaScript -> ExpressJS)", status: "✅", url: "https://github.com/pete-kz/pete-kz-api" },
+			{ name: "Website: Private file storage for tutor (PHP 8)", status: "✅", url: "https://github.com/artchsh/website-edu-tutorial" },
+			{ name: "CNN: Slay or Not slay? (Python)", status: "🗓", url: "" },
+			{ name: "Discord bot (JavaScript)", status: "⚠️", url: "https://github.com/artchsh/GendoIkari-DiscordJS" },
+			{ name: "Instagram bot: Declare love (Python)", status: "⚠️", url: "https://github.com/artchsh/instagram-bot" },
+			{ name: "JSON Database (JavaScript/TypeScript)", status: "⚠️", url: "https://github.com/artchsh/json-database" },
+			{ name: "AI-News: News Scraper (Python)", status: "❌", url: "" },
+			{ name: "Parser for NMAP Scan Output (Python)", status: "❌", url: "" },
+			{ name: "React i18n json translator (Python)", status: "❌", url: "https://github.com/artchsh/json-python-translator" },
+		];
 
-        // Function to create and append elements
-        function createAndAppend(parent, tag, content = '', attributes = {}) {
-            const element = document.createElement(tag);
-            element.innerHTML = content;
-            Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
-            parent.appendChild(element);
-            return element;
-        }
+		// Function to create and append elements
+		function createAndAppend(parent, tag, content = '', attributes = {}) {
+			const element = document.createElement(tag);
+			element.innerHTML = content;
+			Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
+			parent.appendChild(element);
+			return element;
+		}
 
-        // Render status legend
-        const statusLegendContainer = document.getElementById('status-legend');
-        statusLegendContainer.innerHTML = statusLegend.map(item => `${item.emoji} ${item.description}`).join(' | ');
+		// Render status legend
+		const statusLegendContainer = document.getElementById('status-legend');
+		statusLegendContainer.innerHTML = statusLegend.map(item => `${item.emoji} ${item.description}`).join(' | ');
 
-        // Render projects
-        const projectsListContainer = document.getElementById('projects-list');
-        projects.forEach(project => {
-            const li = createAndAppend(projectsListContainer, 'li', '', {name: project.name, status: project.status});
-            createAndAppend(li, 'a', `${project.status} ${project.name}`, {
-                href: project.url,
-                class: project.url ? 'hover:text-blue-400 transition duration-300' : 'text-gray-400 cursor-not-allowed'
-            });
-        });
-    </script>
+		// Render projects
+		const projectsListContainer = document.getElementById('projects-list');
+		projects.forEach(project => {
+			const li = createAndAppend(projectsListContainer, 'li', '', { name: project.name, status: project.status });
+			createAndAppend(li, 'a', `${project.status} ${project.name}`, {
+				href: project.url,
+				class: project.url ? 'hover:text-blue-400 transition duration-300' : 'text-gray-400 cursor-not-allowed'
+			});
+		});
+	</script>
 </body>
+
 </html>
